@@ -1,7 +1,12 @@
 import sys,time,platform
 from pathlib import Path
+import os
 
 def main():
+
+    keys=os.environ["LLM_API_KEY"]
+    print("KEY:",keys)
+
     print("python:",sys.version.split()[0])
     print("平台：",platform.platform())
 
